@@ -10,7 +10,7 @@ function Bonus(){
     return (
         <div>
             <h1>{variables[letter]}</h1>
-            <button onClick={ letter < 25 ? update : ''}>NEXT LETTER</button>
+            <button onClick={ letter < 26 ? update : setLetter(0) }>NEXT LETTER</button>
         </div>
     );
 }
